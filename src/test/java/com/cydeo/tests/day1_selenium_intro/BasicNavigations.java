@@ -16,7 +16,7 @@ public class BasicNavigations {
         WebDriver driver = new ChromeDriver();
 
         //This line will maximize the browser size
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();//maximizes the currently opened browser. this will happen on the line we call this method
 
         //3- go to "https://www.tesla.com"
         driver.get("https://www.tesla.com");
@@ -61,6 +61,12 @@ public class BasicNavigations {
 
 
         System.out.println("currentURL = " + currentURL);
+
+        // this will close the currently opened window
+        driver.close();
+
+        // this will close all of the opened window
+        driver.quit(); // it will close all the tab that we opened
 
 
     }
