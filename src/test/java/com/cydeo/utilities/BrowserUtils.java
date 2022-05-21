@@ -33,7 +33,7 @@ public class BrowserUtils {
      */
 
 
-    public static void switchWindowAndVerify(WebDriver driver, String expectedInUrl, String expectedTitle){
+    public static void switchWindowAndVerify(WebDriver driver, String expectedInUrl, String expectedTitle) {
 
         Set<String> allWindowsHandles = driver.getWindowHandles();
 
@@ -57,7 +57,7 @@ public class BrowserUtils {
     /*
     This method acceps a String "expectedTitle" and Asserts if it is true
      */
-    public static void verifyTitle(WebDriver driver,String expectedTitle){
+    public static void verifyTitle(WebDriver driver, String expectedTitle) {
 
         Assert.assertEquals(driver.getTitle(), expectedTitle);
 
