@@ -67,6 +67,8 @@ public class POMPractices {
         //Expected: Sorry, Wrong Email or Password
         Assert.assertTrue(libraryLoginPage.wrongEmailOrPasswordErrorMessage.isDisplayed());
 
+        Driver.closeDriver();
+
     }
 
 }
