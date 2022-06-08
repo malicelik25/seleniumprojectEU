@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class WebDriveWaitPractices {
 
     @Test
-    public void dynamic_load_7_test(){
+    public void dynamic_load_7_test() {
         //1. Go to https://practice.cydeo.com/dynamic_loading/7
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/7");
 
